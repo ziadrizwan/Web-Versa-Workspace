@@ -147,6 +147,23 @@
   text-align: center;
 }
 
+.toggleButton {
+  background: none; 
+  border: none;
+  color: #009ffb;
+  font-size: clamp(0.5rem, 1.2vw, 1rem);
+  cursor: pointer;
+  padding: 0;      
+  margin-left: 0;
+  margin-bottom: clamp(0.7rem,0.6vh,1rem);
+}
+
+.toggleButton:hover {
+  text-decoration: underline;
+  color: #007acc;        
+}
+
+
 .signupButton
 {
     background: transparent;

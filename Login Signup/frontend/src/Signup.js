@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PasswordSuggestions from './PasswordSuggestions';
 import'./Signup.css';
+import { Link } from "react-router-dom";
 
 function Signup() {
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -49,7 +50,7 @@ function Signup() {
         <button className="signupButton" type="submit">Sign Up</button>
       </form>
       <p className="SigninLink montserratFont"> 
-        Already have an account? <a href="/signin">Sign In</a>
+       Already have an account? <Link to="/signin">Sign In</Link>
       </p>
     </div>
   );
