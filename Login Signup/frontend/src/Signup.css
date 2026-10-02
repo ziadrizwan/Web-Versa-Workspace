@@ -1,0 +1,188 @@
+.montserratFont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:600;
+}
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+.signupForm {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.signupForm h2
+{
+    color: #009ffb;
+    font-weight:bold;
+    text-align: center;
+    font-size: clamp(0.7rem,1.5vw,2rem);
+    margin:0 0 clamp(0.2rem,1.5vh,2rem) 0;
+    
+     
+}
+
+@media (max-width: 600px) {
+  .signupForm {
+    width: 80%;
+  }
+
+  .signupForm h2 {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+  }
+}
+
+.textField
+{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    border-radius: clamp(0.5rem,1vw,2rem);
+    padding: clamp(0.2rem,0.7vw,1.5rem);
+    margin-bottom: clamp(0.7rem,0.6vh,1rem);
+    object-fit: contain; 
+    background-color:#d5ecff;
+    color: #009ffb;
+    font-style: bold;
+}
+.textField::placeholder
+{
+    color: #009ffb;
+    opacity: 80%;
+
+}
+.textField:focus::placeholder
+{
+    color:transparent;
+}
+.textField:autofill
+{
+  -webkit-text-fill-color: #009ffb !important;
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  border: 1px solid #009ffb;
+  border-radius: clamp(0.5rem, 1vw, 2rem);
+}
+.textField:hover
+{
+    background-color: #ffffff;
+    border: 1px solid #009ffb;
+    border-radius: clamp(0.5rem,1vw,2rem);
+    outline: none;
+}
+.textField:focus
+{
+    background-color: #ffffff;
+    border: 1px solid #009ffb;
+    border-radius: clamp(0.5rem,1vw,2rem);
+    outline: none;
+}
+.textField:focus-within
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #009ffb;
+    border-radius: clamp(0.5rem,1vw,2rem);
+    outline: none;
+}  
+.textField input
+{
+    background-color: #ffffff;
+    border: 1px solid #009ffb;
+    border-radius: clamp(0.5rem,1vw,2rem);
+    outline: none;
+    color: #009ffb;
+    width: 100%;
+
+}
+.textField input::placeholder
+{
+    color: #009ffb;
+    opacity: 80%;
+}
+
+.suggestionsWrapper {
+  width: 100%;
+  margin-bottom: clamp(0.7rem,0.6vh,1rem);   
+}
+
+.passwordSuggestion {
+  width: 100%;
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  background-color: #d5ecff;
+  border-radius: clamp(0.5rem, 1vw, 2rem);
+  padding: clamp(0.5rem, 1vw, 1rem);
+  color: #009ffb;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  box-sizing: border-box;
+  margin-bottom: clamp(0.7rem,0.6vh,1rem);
+}
+
+.errorMessage {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: clamp(0.5rem, 1.1vw, 0.8rem);
+  margin-bottom: clamp(0.7rem,0.6vh,1rem);
+  padding: 0;
+  text-align: center;
+}
+
+.signupButton
+{
+    background: transparent;
+    border: none;
+    border-radius: 3rem;
+    padding: clamp(0.2rem, 0.5vw, 0.8rem);
+    justify-self: center; 
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+    align-items: center;
+    background-color: #009ffb;
+    color: #ffffff;
+    font-weight:normal;
+    font-size: clamp(0.5rem, 1.2vw, 1rem);
+        
+}
+.signupButton:hover {
+  background-color: #ffffff;
+  border: 1px solid #009ffb;
+  color: #009ffb;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.SigninLink {
+    font-size: clamp(0.5rem, 1.2vw, 1rem);
+    color: #009ffb;
+    margin-top: clamp(0.5rem, 1vh, 1rem);
+}
+.SigninLink a {
+    color: #009ffb;
+    text-decoration: none;
+}
+.SigninLink a:hover {
+    color: #009ffb;
+    text-decoration: underline;
+}
+
